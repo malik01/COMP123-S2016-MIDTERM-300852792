@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/**
+ * author name: Shahzaib Malik
+ * date: 24 June 2016
+ * student id: 300852792
+ * version 0.0.1
+ */ 
 namespace COMP123_MidTermExam
 {
     /**
@@ -17,14 +22,70 @@ namespace COMP123_MidTermExam
      */
     public abstract class LottoGame
     {
+
+
+
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        
+
         // CREATE private fields here --------------------------------------------
-
+        private Random _random = new Random();
+        private int _setSize;
+        private int _elementNumber;
+        private List<int> _elementList = new List<int>();
+        private List<int> _numberList = new List<int>();
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        
-        // CREATE public properties here -----------------------------------------
 
+        // CREATE public properties here -----------------------------------------
+        public List<int> ElementList 
+        {
+            get
+            {
+                return this._elementList;
+            }
+        }
+
+        public int ElementNumber
+        {
+            get
+            {
+                return this._elementNumber;
+            }
+
+            set
+            {
+                this._elementNumber = value;
+            }
+        }
+
+        public List<int> NumberList
+        {
+            get
+            {
+                return this._numberList;
+            }
+        }
+
+        public int Random
+        {
+            get
+            {
+                return _random;
+            }
+
+        }
+
+        public int SetSize
+        {
+            get
+            {
+                return this._setSize;
+            }
+
+            set
+            {
+                this._setSize = value;
+            }
+        }
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         /**
@@ -53,10 +114,19 @@ namespace COMP123_MidTermExam
             this._build();
         }
 
+       
+
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE the private _initialize method here -----------------------------
+        private void _initialze()
+        {
 
+        }
+        private void _build()
+        {
+
+        }
         // CREATE the private _build method here -----------------------------------
 
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -87,7 +157,11 @@ namespace COMP123_MidTermExam
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+       
         // CREATE the public PickElements method here ----------------------------
+     public void PickElements()
+        {
+
+        }
     }
 }
