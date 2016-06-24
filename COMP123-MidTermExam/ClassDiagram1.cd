@@ -3,9 +3,25 @@
   <Class Name="COMP123_MidTermExam.LottoGame">
     <Position X="0.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAgAAEAEIAAcIAAAYAAABAAEAAAAAAAAAAE=</HashCode>
+      <HashCode>AgAAAAAAACgAAEAEAAAcIAAAYAAABAAEAAAAAAAAAAE=</HashCode>
       <FileName>LottoGame.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="COMP123_MidTermExam.Lotto649">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lotto649.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COMP123_MidTermExam.LottoMax">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LottoMax.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

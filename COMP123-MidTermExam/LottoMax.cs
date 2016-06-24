@@ -28,6 +28,11 @@ namespace COMP123_MidTermExam
             
         }
 
+        public void GenerateLottoNumbers()
+        {
+            throw new System.NotImplementedException();
+        }
+
         // CREATE the public GenerateLottoNumbers method here ----------------
     }
 }
