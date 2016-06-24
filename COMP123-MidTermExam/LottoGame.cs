@@ -69,7 +69,7 @@ namespace COMP123_MidTermExam
         {
             get
             {
-                return _random;
+                return _random.Next(0,49);
             }
 
         }
@@ -119,13 +119,13 @@ namespace COMP123_MidTermExam
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE the private _initialize method here -----------------------------
-        private void _initialze()
+        private void _initialize()
         {
-
+            
         }
         private void _build()
         {
-
+            NumberList.Add(Random);
         }
         // CREATE the private _build method here -----------------------------------
 
@@ -161,7 +161,12 @@ namespace COMP123_MidTermExam
         // CREATE the public PickElements method here ----------------------------
      public void PickElements()
         {
-
+            if (this.ElementList.Count > 0)
+            {
+                ElementList.Clear();
+                NumberList.Clear();
+            }
+            _build();
         }
     }
 }
